@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:3000/" />
+<title>signup</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">signup</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/users/sign_up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='new_user']/div[4]</td>
+	<td>Password confirmation</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//form[@id='new_user']/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTitle</td>
+	<td>BookEvent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.col-md-6</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>BookEvent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>css=html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTitle</td>
+	<td>BookEvent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>someemail@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>password5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/users/sign_up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>someemail@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>password5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/users/sign_up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>password5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>password5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/users/sign_up</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_email</td>
+	<td>someemail@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password</td>
+	<td>password5</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=user_password_confirmation</td>
+	<td>password5</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=commit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

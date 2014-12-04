@@ -1,0 +1,11 @@
+
+$ rake test:units
+Run options: --seed 50406
+
+# Running:
+
+-----
+
+Finished in 0.480027s, 10.4161 runs/s, 22.9154 assertions/s.
+
+5 runs, 11 assertions, 0 failures, 0 errors, 0 skips

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:3000/" />
+<title>contactus</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">contactus</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/site/contactUs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.col-md-6</td>
+	<td>Contact Us Feel free to contac us 24/7 if you have any issues with the site. <br /> We are here to help :) <br /> <br /> <br /> Email:<br /> Support@BookEvent.com <br /> <br /> <br /> Address: <br /> 975 S Myrtle Ave <br /> Tempe, AZ, 85381<br /> Map it! <br /> <br /> <br /> Phone: <br /> 480-123-5467</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Map it!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Map it!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTitle</td>
+	<td>Lattie F. Coor Hall - Google Maps</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

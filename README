@@ -1,0 +1,96 @@
+README First !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+Included in this document:
+
++ Group Members
++ GitHub Link
++ Video Link
++ Functional Testing Video Link
++ How to get Code Working
++ Testing
++ Testing Logs
+
+
+
+
+Group 11
+Ticketing Software
+
+~~~~~~~~~~~~~~~~~~~~ Members ~~~~~~~~~~~~~~~~
++ Danny Graca 		Daniel.Graca@asu.edu
++ Roberto Gonzalez	R.G@asu.edu	
++ Ying-hua Wu		WuYing@asu.edu
+
+
+~~~~~~~~~~~~~~~~~~ GitHub Link ~~~~~~~~~~~~~~~~~~~~~~
+https://github.com/Nohbidy/CSE360Secondary
+
+
+~~~~~~~~~~~~~~~~~~~ Video Link ~~~~~~~~~~~~~~~~~~~~~~
+http://youtu.be/E3vaTfBdo_c\
+
+
+
+~~~~~~~~~~~~~~~~~~~ Functional Test Video Link ~~~~~~~~~~~~~~~~~~~~~~
+http://youtu.be/BxCXLVcXIjw
+
+
+~~~~~~~~~~~~~~~~~ To get the site running please follow this steps:~~~~~~~~~~~~~~~~~
+
+
+1. - First thing to do is install Rails in the computer you are using. 
+
+(If you already have Rails go to Step 2).
+
+Great steps on how to install rails can be found here:
+http://installrails.com/steps/choose_os
+
+
+
+2. - After you install Rails you have to change your directory to the project folder.
+	Open Terminal or CMD and cd to CSE360Secondary
+
+
+3. - You will also need to run the following commands just to get the project running.
+	$ bundle install	
+	$ rake db:migrate RAILS_ENV=development
+	
+
+
+4. - Once you complete step 3 you can run the rails server.
+      Type in Terminal or CMD
+	$ rails server
+
+5. - Go to the Web Browser of your choice and type the following web address.
+      
+      http://localhost:3000/
+      
+
+6. - After that you should be able to see our amazing website.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~ Testing ~~~~~~~~~~~~~~~~~~~~~~~
+
+Functional Testing documents are under:
+/CSE360Secondary/test/Functional Testing
+
+
+
+Unit Testing documents are under:
+/CSE360Secondary/test/
+
+Unit Testing Logs are under:
+/CSE360Secondary/test/Testing Logs
+
+
+unit testing for user, email, password
+
+$ rake test:units
+ 5 run, 11 assertions, 0 failures, 0 errors, 0 skips
+
+
+~~~~~~~~~~~~~~~~~~How to run Functional Testing~~~~~~~~~~~~~~~~~~~We chose to work with Firefox for this portion of the testing.1. - Download Mozilla Firefox2. - Download Selenium IDE (http://docs.seleniumhq.org/download/)3. - Download project and open terminal (CMD) and change directory to our project.4. - Run Rails Server 5. - Launch our site (http://localhost:3000)6. - Run the tests!!
+
+
+

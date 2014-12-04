@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>BookEvent</title>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css", "application" %>
+<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application" %>
+
+<%= image_tag 'logo2.png', :alt => 'logo2', :align => 'left',  :width => 90, :height => 100 =%> 
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li><%= link_to "Home", root_path %></li>
+		<li><%= link_to "Events", mainevents_path %></li>
+		<li><%= link_to "Contact Us", site_contactUs_path %></li>
+
+		<% if user_signed_in? %>
+			<li> <%= link_to( 'Profile', site_profile_path) %> </li>
+			<li> <%= link_to( 'Logout', destroy_user_session_path, :method => :delete) %> </li>
+		<% else %>
+			<li> <%= link_to( 'Login', new_user_session_path) %> </li>
+		<% end %>
+	</ul>
+</div>
+
+<% flash.each do |name, message| %>
+	<div id= "flash_<%= name %>">
+		<%= message %>
+	</div>
+<% end %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<%= yield %>
+		</div>
+		<div class="col-md-6">
+			<div id='calendar'></div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
